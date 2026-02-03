@@ -105,13 +105,17 @@
     noBtn.style.top = y + "px";
   });
 
-  function yesClick() {
-    card.innerHTML = "<h1>💘 YAY! I’m so lucky to have you, Rosemary 💘</h1>";
-    card.classList.add("celebrate");
-    for (let i = 0; i < 40; i++) {
-      createHeart();
-    }
+function yesClick() {
+  card.innerHTML = `
+    <h1>💘 Yay!! I’m so happy 💘</h1>
+    <p style="font-size:20px;">Love you, <strong>Rosemary</strong> 💖</p>
+    <p style="margin-top:15px;">— DerpyBum 😘</p>
+  `;
+  card.classList.add("celebrate");
+  for (let i = 0; i < 40; i++) {
+    createHeart();
   }
+}
 
   function createHeart() {
     const heart = document.createElement("div");
